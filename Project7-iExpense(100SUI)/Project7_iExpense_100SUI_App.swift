@@ -11,7 +11,7 @@ import SwiftUI
 struct Project7_iExpense_100SUI_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           ExpenseMain()
         }
     }
 }

@@ -12,7 +12,6 @@ class User2: ObservableObject {
    @Published var secondName = "Dandy"
 }
 
-
 struct User {
     var firstName = "Bilbo"
     var secondName = "Baggins"
@@ -21,8 +20,8 @@ struct User {
 struct ContentView: View {
     @State private var user = User()
     @StateObject var user2 = User2()
-  //  @StateObject var girl = Girl()
-    
+    @State private var showingSheet = false
+
     var body: some View {
         VStack {
       
@@ -36,10 +35,8 @@ struct ContentView: View {
                 .padding()
                 .background(.gray)
                 .padding(.bottom, 50)
-            
             Text("Your name is: \(user2.firstName) \(user2.secondName)")
                 .font(.title2)
-            
             TextField("First name", text: $user2.firstName)
                 .padding()
                 .background(.gray)
@@ -47,6 +44,12 @@ struct ContentView: View {
                 .padding()
                 .background(.gray)
                 .padding(.bottom, 50)
+            Button("Show sheet") {
+                showingSheet.toggle()
+            }
+            .sheet(isPresented: $showingSheet) {
+                SecondView(name: "Alla")
+            }
             
         }
         .padding()
@@ -60,7 +63,14 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct SecondView: View {
+    @Environment(\.dismiss) var dismiss
+    let name: String
+    
     var body: some View {
-        Text("Second View")
+        Text("Hello, \(name)!")
+            .padding(.bottom, 20)
+        Button("Dismiss") {
+           dismiss()
+        }
     }
 }
