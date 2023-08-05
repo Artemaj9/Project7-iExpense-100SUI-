@@ -40,6 +40,7 @@ class Expenses: ObservableObject {
 struct ExpenseMain: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
+   
     
     var body: some View {
         NavigationStack {
