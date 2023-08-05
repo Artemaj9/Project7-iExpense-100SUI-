@@ -11,6 +11,7 @@
 		AC4F529F2A7E369D002F6821 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F529E2A7E369D002F6821 /* ContentView.swift */; };
 		AC4F52A12A7E369E002F6821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4F52A02A7E369E002F6821 /* Assets.xcassets */; };
 		AC4F52A42A7E369E002F6821 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4F52A32A7E369E002F6821 /* Preview Assets.xcassets */; };
+		AC4F52AB2A7E408E002F6821 /* ExternlaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F52AA2A7E408E002F6821 /* ExternlaClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC4F529E2A7E369D002F6821 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC4F52A02A7E369E002F6821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4F52A32A7E369E002F6821 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC4F52AA2A7E408E002F6821 /* ExternlaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternlaClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AC4F529C2A7E369D002F6821 /* Project7_iExpense_100SUI_App.swift */,
 				AC4F529E2A7E369D002F6821 /* ContentView.swift */,
+				AC4F52AA2A7E408E002F6821 /* ExternlaClass.swift */,
 				AC4F52A02A7E369E002F6821 /* Assets.xcassets */,
 				AC4F52A22A7E369E002F6821 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4F52AB2A7E408E002F6821 /* ExternlaClass.swift in Sources */,
 				AC4F529F2A7E369D002F6821 /* ContentView.swift in Sources */,
 				AC4F529D2A7E369D002F6821 /* Project7_iExpense_100SUI_App.swift in Sources */,
 			);
